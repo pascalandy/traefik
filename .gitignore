@@ -1,18 +1,95 @@
+# Files
+############
 .idea/
 .intellij/
 *.iml
 .vscode/
 .DS_Store
-/dist
-/webui/.tmp/
-/site/
-/docs/site/
-/static/
-/autogen/
-/traefik
+.tmp/
 /traefik.toml
 /traefik.yml
 *.log
 *.exe
 cover.out
 vendor/
+.bashcheck.sh
+utility.sh
+.cache
+.env
+
+# Directories
+############
+/dist
+/webui/
+/site/
+/docs/site/
+/static/
+/autogen/
+/traefik
+
+# Compiled source #
+###################
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+
+
+# Logs and databases #
+######################
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.vscode
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+.metadata_never_index
+._*
+
+# Files that might appear in the root of a volume
+#################################################
+.DocumentRevisions-V100
+.fseventsd
+.dbfseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.trash
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.com.apple.timemachine.supported
+.PKInstallSandboxManager
+.PKInstallSandboxManager-SystemSoftware
+.file
+.hotfiles.btree
+.quota.ops.user
+.quota.user
+.quota.ops.group
+.quota.group
+.vol
+.efi
+
+# Directories potentially created on remote AFP share
+#####################################################
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+.Mobile*
+.disk_*
+
+# Sherlock files
+################
+TheFindByContentFolder
+TheVolumeSettingsFolder
+.FBCIndex
+.FBCSemaphoreFile
+.FBCLockFolder
