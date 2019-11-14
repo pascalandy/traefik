@@ -3,21 +3,40 @@
 Features Are Better When You Know How to Use Them
 {: .subtitle }
 
-You've found something unclear in the documentation and want to give a try at explaining it better?
-Let's see how.
+You've found something unclear in the documentation and want to give a try at explaining it better? Let's see how.
 
-## Building Documentation
+Our [documentation](https://docs.traefik.io/) is built on [mkdocs](https://mkdocs.org/).
 
-### General
+## Requirements
 
-This [documentation](https://docs.traefik.io/) is built with [mkdocs](https://mkdocs.org/).
+The power of communities pull request and forks means that `1 + 1 = 3`. You can help to make this repo a better one! Here is how:
+
+1. Fork our repo from `git@github.com:containous/traefik.git`
+2. Create your own feature branch: `git checkout -b my-new-feature`
+3. Build the documentation (see below how)
+4. Commit your changes: `git commit -am 'Add some feature'`
+5. Push to the branch: `git push origin my-new-feature`
+6. Submit a pull request to `https://github.com/containous/traefik/`
+
+## How to build the documentation?
+
+**There are two core steps**: You will need to write your updates in the Markdown files (ex: `somefile.md`) and then build the static files using the process below. 
 
 ### Method 1: `Docker` and `make`
 
-You can build the documentation and test it locally (with live reloading), using the `docs` target:
+**Requirement**: You must have Docker installed.
+
+This method will allow you to build the documentation and test it locally (with live reloading), using the `docs` target.
+
+**Run**:
 
 ```bash
-$ make docs
+make docs
+```
+
+**Output**:
+
+```bash
 docker build -t traefik-docs -f docs.Dockerfile .
 # […]
 docker run  --rm -v /home/user/go/github/containous/traefik:/mkdocs -p 8000:8000 traefik-docs mkdocs serve
